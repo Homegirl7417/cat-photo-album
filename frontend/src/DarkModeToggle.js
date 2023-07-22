@@ -7,7 +7,7 @@ class DarkModeToggle {
     this.$DarkModeToggle = $DarkModeToggle;
     this.$DarkModeToggle.type = 'checkbox';
 
-    $DarkModeToggle.className = 'SearchInput';
+    $DarkModeToggle.className = 'DarkModeToggle';
     $wrapper.appendChild($DarkModeToggle);
     $target.appendChild($wrapper);
 
