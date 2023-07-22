@@ -1,8 +1,13 @@
 @font-face {
-  font-family: "Goyang";
-  src: url("/src/fonts/Goyang.woff") format("woff");
+  font-family: 'Goyang';
+  src: url('/src/fonts/Goyang.woff') format('woff');
   font-weight: normal;
   font-style: normal;
+}
+
+:root[color-mode='dark'] {
+  --background: #000;
+  --textColor: white;
 }
 
 html {
@@ -11,6 +16,8 @@ html {
 
 body * {
   font-family: Goyang;
+  background-color: var(--background);
+  color: var(--textColor);
 }
 
 *,
@@ -94,8 +101,8 @@ body * {
   .SearchResult {
     grid-template-columns: repeat(2, minmax(250px, 1fr));
   }
-  
-  .ImageInfo .content-wrapper{
+
+  .ImageInfo .content-wrapper {
     width: 100%;
   }
 }
@@ -105,11 +112,11 @@ body * {
     grid-template-columns: repeat(1, minmax(250px, 1fr));
   }
 }
-/* dark mode 처리
-@media (prefers-color-scheme: dark) {
+
+/*dark mode 처리*/
+/* @media (prefers-color-scheme: dark) {
   body {
     background-color: #000;
     color: white;
   }
-}
-*?
+} */
