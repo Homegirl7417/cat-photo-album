@@ -26,6 +26,15 @@ class App {
           this.Loading.hide();
         });
       },
+      onRandomSearch: () => {
+        // 로딩 show
+        this.Loading.show();
+        api.fetchRamdomCats().then(({ data }) => {
+          //로딩 hide
+          this.setState(data);
+          this.Loading.hide();
+        });
+      },
     });
 
     this.searchResult = new SearchResult({
